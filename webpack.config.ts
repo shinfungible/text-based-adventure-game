@@ -51,13 +51,13 @@ const renderer: Configuration = {
   ...common,
   target: "web",
   entry: {
-    app: "./src/web/index.tsx",
+    app: "./src/game/index.tsx",
   },
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       inject: "body",
-      template: "./src/web/index.html",
+      template: "./src/game/index.html",
     }),
   ],
 };
